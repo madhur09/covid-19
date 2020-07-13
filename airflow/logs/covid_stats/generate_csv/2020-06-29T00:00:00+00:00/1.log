@@ -1,0 +1,60 @@
+[2020-06-29 12:54:18,062] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats.generate_csv 2020-06-29T00:00:00+00:00 [queued]>
+[2020-06-29 12:54:18,083] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats.generate_csv 2020-06-29T00:00:00+00:00 [queued]>
+[2020-06-29 12:54:18,083] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-29 12:54:18,084] {taskinstance.py:880} INFO - Starting attempt 1 of 6
+[2020-06-29 12:54:18,084] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-29 12:54:18,091] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): generate_csv> on 2020-06-29T00:00:00+00:00
+[2020-06-29 12:54:18,094] {standard_task_runner.py:53} INFO - Started process 4831 to run task
+[2020-06-29 12:54:18,142] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_stats.generate_csv 2020-06-29T00:00:00+00:00 [running]> nineleaps-ThinkPad-E480
+[2020-06-29 12:54:18,158] {taskinstance.py:1145} ERROR - type object argument after ** must be a mapping, not str
+Traceback (most recent call last):
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/airflow/models/taskinstance.py", line 983, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 113, in execute
+    return_value = self.execute_callable()
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nineleaps/airflow/plugins/generate_csv.py", line 14, in generate_csv
+    spark_df = spark.createDataFrame(Row(**x) for x in dict_data)
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/pyspark/sql/session.py", line 748, in createDataFrame
+    rdd, schema = self._createFromLocal(map(prepare, data), schema)
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/pyspark/sql/session.py", line 413, in _createFromLocal
+    data = list(data)
+  File "/home/nineleaps/airflow/plugins/generate_csv.py", line 14, in <genexpr>
+    spark_df = spark.createDataFrame(Row(**x) for x in dict_data)
+TypeError: type object argument after ** must be a mapping, not str
+[2020-06-29 12:54:18,159] {taskinstance.py:1168} INFO - Marking task as UP_FOR_RETRY
+[2020-06-29 12:54:28,058] {logging_mixin.py:112} INFO - [2020-06-29 12:54:28,057] {local_task_job.py:103} INFO - Task exited with return code 1
+[2020-06-29 13:00:50,148] {taskinstance.py:663} INFO - Dependencies not met for <TaskInstance: covid_stats.generate_csv 2020-06-29T00:00:00+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'skipped': 0, 'successes': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0, 'total': 1}, upstream_task_ids=set(['extract'])
+[2020-06-29 13:00:50,152] {logging_mixin.py:112} INFO - [2020-06-29 13:00:50,152] {local_task_job.py:91} INFO - Task is not able to be run
+[2020-06-29 13:03:52,185] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats.generate_csv 2020-06-29T00:00:00+00:00 [queued]>
+[2020-06-29 13:03:52,195] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats.generate_csv 2020-06-29T00:00:00+00:00 [queued]>
+[2020-06-29 13:03:52,195] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-29 13:03:52,195] {taskinstance.py:880} INFO - Starting attempt 1 of 6
+[2020-06-29 13:03:52,195] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-29 13:03:52,204] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): generate_csv> on 2020-06-29T00:00:00+00:00
+[2020-06-29 13:03:52,208] {standard_task_runner.py:53} INFO - Started process 8091 to run task
+[2020-06-29 13:03:52,254] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_stats.generate_csv 2020-06-29T00:00:00+00:00 [running]> nineleaps-ThinkPad-E480
+[2020-06-29 13:03:52,266] {taskinstance.py:1145} ERROR - can not infer schema from empty dataset
+Traceback (most recent call last):
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/airflow/models/taskinstance.py", line 983, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 113, in execute
+    return_value = self.execute_callable()
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nineleaps/airflow/plugins/generate_csv.py", line 14, in generate_csv
+    spark_df = spark.createDataFrame(Row(**x) for x in dict_data)
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/pyspark/sql/session.py", line 748, in createDataFrame
+    rdd, schema = self._createFromLocal(map(prepare, data), schema)
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/pyspark/sql/session.py", line 416, in _createFromLocal
+    struct = self._inferSchemaFromList(data, names=schema)
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/pyspark/sql/session.py", line 343, in _inferSchemaFromList
+    raise ValueError("can not infer schema from empty dataset")
+ValueError: can not infer schema from empty dataset
+[2020-06-29 13:03:52,267] {taskinstance.py:1168} INFO - Marking task as UP_FOR_RETRY
+[2020-06-29 13:04:02,181] {logging_mixin.py:112} INFO - [2020-06-29 13:04:02,181] {local_task_job.py:103} INFO - Task exited with return code 1

@@ -1,0 +1,36 @@
+[2020-07-08 13:42:59,463] {scheduler_job.py:154} INFO - Started process (PID=7160) to work on /home/nineleaps/airflow/dags/main_dag.py
+[2020-07-08 13:42:59,467] {scheduler_job.py:1562} INFO - Processing file /home/nineleaps/airflow/dags/main_dag.py for tasks to queue
+[2020-07-08 13:42:59,468] {logging_mixin.py:112} INFO - [2020-07-08 13:42:59,468] {dagbag.py:396} INFO - Filling up the DagBag from /home/nineleaps/airflow/dags/main_dag.py
+[2020-07-08 13:42:59,505] {scheduler_job.py:1574} INFO - DAG(s) ['covid_stats'] retrieved from /home/nineleaps/airflow/dags/main_dag.py
+[2020-07-08 13:42:59,540] {scheduler_job.py:1284} INFO - Processing covid_stats
+[2020-07-08 13:42:59,580] {scheduler_job.py:1294} INFO - Created <DagRun covid_stats @ 2020-06-28T00:12:00+00:00: scheduled__2020-06-28T00:12:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,584] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:01:00+00:00: scheduled__2020-06-28T00:01:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,609] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:02:00+00:00: scheduled__2020-06-28T00:02:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,633] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:03:00+00:00: scheduled__2020-06-28T00:03:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,655] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:04:00+00:00: scheduled__2020-06-28T00:04:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,681] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:05:00+00:00: scheduled__2020-06-28T00:05:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,709] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:06:00+00:00: scheduled__2020-06-28T00:06:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,740] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:07:00+00:00: scheduled__2020-06-28T00:07:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,777] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:08:00+00:00: scheduled__2020-06-28T00:08:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,806] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:09:00+00:00: scheduled__2020-06-28T00:09:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,834] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:10:00+00:00: scheduled__2020-06-28T00:10:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,862] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:11:00+00:00: scheduled__2020-06-28T00:11:00+00:00, externally triggered: False>
+[2020-07-08 13:42:59,888] {scheduler_job.py:759} INFO - Examining DAG run <DagRun covid_stats @ 2020-06-28 00:12:00+00:00: scheduled__2020-06-28T00:12:00+00:00, externally triggered: False>
+[2020-07-08 13:43:00,022] {scheduler_job.py:447} INFO - Skipping SLA check for <DAG: covid_stats> because no tasks in DAG have SLAs
+[2020-07-08 13:43:00,026] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.generate_csv 2020-06-28 00:01:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,031] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.generate_csv 2020-06-28 00:02:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,035] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.generate_csv 2020-06-28 00:03:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,039] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.generate_csv 2020-06-28 00:06:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,043] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.generate_csv 2020-06-28 00:07:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,046] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.generate_csv 2020-06-28 00:08:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,050] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.generate_csv 2020-06-28 00:09:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,054] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.generate_csv 2020-06-28 00:10:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,057] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.generate_csv 2020-06-28 00:11:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,061] {scheduler_job.py:1640} INFO - Creating / updating <TaskInstance: covid_stats.extract 2020-06-28 00:12:00+00:00 [scheduled]> in ORM
+[2020-07-08 13:43:00,072] {scheduler_job.py:162} INFO - Processing /home/nineleaps/airflow/dags/main_dag.py took 0.609 seconds
+[2020-07-08 22:46:21,541] {scheduler_job.py:154} INFO - Started process (PID=11096) to work on /home/nineleaps/airflow/dags/main_dag.py
+[2020-07-08 22:46:21,550] {scheduler_job.py:1562} INFO - Processing file /home/nineleaps/airflow/dags/main_dag.py for tasks to queue
+[2020-07-08 22:46:21,551] {logging_mixin.py:112} INFO - [2020-07-08 22:46:21,551] {dagbag.py:396} INFO - Filling up the DagBag from /home/nineleaps/airflow/dags/main_dag.py
+[2020-07-08 22:46:21,581] {scheduler_job.py:1574} INFO - DAG(s) ['covid_stats'] retrieved from /home/nineleaps/airflow/dags/main_dag.py
+[2020-07-08 22:46:21,589] {logging_mixin.py:112} INFO - [2020-07-08 22:46:21,587] {dag.py:1501} INFO - Creating ORM DAG for covid_stats
+[2020-07-08 22:46:21,599] {scheduler_job.py:162} INFO - Processing /home/nineleaps/airflow/dags/main_dag.py took 0.058 seconds

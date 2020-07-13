@@ -1,0 +1,13 @@
+[2020-06-28 19:34:30,825] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats_2.extract 2020-05-31T00:01:00+00:00 [queued]>
+[2020-06-28 19:34:30,838] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats_2.extract 2020-05-31T00:01:00+00:00 [queued]>
+[2020-06-28 19:34:30,838] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-28 19:34:30,838] {taskinstance.py:880} INFO - Starting attempt 1 of 6
+[2020-06-28 19:34:30,838] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-28 19:34:30,846] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): extract> on 2020-05-31T00:01:00+00:00
+[2020-06-28 19:34:30,848] {standard_task_runner.py:53} INFO - Started process 6236 to run task
+[2020-06-28 19:34:30,884] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_stats_2.extract 2020-05-31T00:01:00+00:00 [running]> nineleaps-ThinkPad-E480
+[2020-06-28 19:34:31,045] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-06-28 19:34:31,047] {taskinstance.py:1065} INFO - Marking task as SUCCESS.dag_id=covid_stats_2, task_id=extract, execution_date=20200531T000100, start_date=20200628T140430, end_date=20200628T140431
+[2020-06-28 19:34:40,825] {logging_mixin.py:112} INFO - [2020-06-28 19:34:40,824] {local_task_job.py:103} INFO - Task exited with return code 0

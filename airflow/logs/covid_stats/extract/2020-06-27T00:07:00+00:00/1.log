@@ -1,0 +1,36 @@
+[2020-06-28 20:17:56,003] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats.extract 2020-06-27T00:07:00+00:00 [queued]>
+[2020-06-28 20:17:56,020] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats.extract 2020-06-27T00:07:00+00:00 [queued]>
+[2020-06-28 20:17:56,020] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-28 20:17:56,020] {taskinstance.py:880} INFO - Starting attempt 1 of 6
+[2020-06-28 20:17:56,020] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-28 20:17:56,029] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): extract> on 2020-06-27T00:07:00+00:00
+[2020-06-28 20:17:56,031] {standard_task_runner.py:53} INFO - Started process 12178 to run task
+[2020-06-28 20:17:56,080] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_stats.extract 2020-06-27T00:07:00+00:00 [running]> nineleaps-ThinkPad-E480
+[2020-06-28 20:17:56,182] {taskinstance.py:1145} ERROR - unsupported operand type(s) for +: 'dict' and 'str'
+Traceback (most recent call last):
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/airflow/models/taskinstance.py", line 983, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 113, in execute
+    return_value = self.execute_callable()
+  File "/home/nineleaps/.local/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nineleaps/airflow/plugins/extract.py", line 19, in extract
+    print(res+"hi")
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+[2020-06-28 20:17:56,183] {taskinstance.py:1168} INFO - Marking task as UP_FOR_RETRY
+[2020-06-28 20:18:06,000] {logging_mixin.py:112} INFO - [2020-06-28 20:18:05,999] {local_task_job.py:103} INFO - Task exited with return code 1
+[2020-06-28 20:32:36,623] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats.extract 2020-06-27T00:07:00+00:00 [queued]>
+[2020-06-28 20:32:36,635] {taskinstance.py:669} INFO - Dependencies all met for <TaskInstance: covid_stats.extract 2020-06-27T00:07:00+00:00 [queued]>
+[2020-06-28 20:32:36,635] {taskinstance.py:879} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-28 20:32:36,635] {taskinstance.py:880} INFO - Starting attempt 1 of 6
+[2020-06-28 20:32:36,636] {taskinstance.py:881} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-28 20:32:36,644] {taskinstance.py:900} INFO - Executing <Task(PythonOperator): extract> on 2020-06-27T00:07:00+00:00
+[2020-06-28 20:32:36,646] {standard_task_runner.py:53} INFO - Started process 17230 to run task
+[2020-06-28 20:32:36,696] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: covid_stats.extract 2020-06-27T00:07:00+00:00 [running]> nineleaps-ThinkPad-E480
+[2020-06-28 20:32:36,849] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-06-28 20:32:36,852] {taskinstance.py:1065} INFO - Marking task as SUCCESS.dag_id=covid_stats, task_id=extract, execution_date=20200627T000700, start_date=20200628T150236, end_date=20200628T150236
+[2020-06-28 20:32:46,619] {logging_mixin.py:112} INFO - [2020-06-28 20:32:46,618] {local_task_job.py:103} INFO - Task exited with return code 0
