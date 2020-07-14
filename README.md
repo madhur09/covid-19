@@ -72,14 +72,14 @@ Key Entities in Code
 
 Dependencies
 ----
-1. **Hadoop**: database connection and queries execution of sqlite3.    
+1. **Hadoop**: A software framework for distributed storage and processing of big data using the MapReduce programming model.
 
-2. **Spark**: software test framework for running test cases.
+2. **Spark**: An open-source distributed general-purpose cluster-computing framework.
 
-3. **Apache-airflow**: framework for measuring coverage for test cases.
+3. **Apache-airflow**: It is an open-source workflow management platform.
 
-4. **Grafana**: mocking framework is a tool that will help to generate stubs and mocks.
+4. **Grafana**: It is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.
 
-5. **Kibana**: framework for measuring coverage for test cases.
+5. **Kibana**: It is an open source data visualization dashboard for Elasticsearch. It provides visualization capabilities on top of the content indexed on an Elasticsearch cluster.
 
-6. **Datadog**: framework for measuring coverage for test cases.
+6. **Datadog**: It is a monitoring service for cloud-scale applications, providing monitoring of servers, databases, tools, and services, through a SaaS-based data analytics platform.
